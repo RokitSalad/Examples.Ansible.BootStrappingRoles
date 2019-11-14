@@ -30,7 +30,7 @@ The ansible-galaxy command only pulls down the roles, it doesn't execute them. A
 
 > *It's possible to reference roles from your own git repositories, whether they're public or private. Simply follow the syntax [here](https://galaxy.ansible.com/docs/using/installing.html#installing-multiple-roles-from-a-file).*
 
-Once you've downloaded the roles with a call to ansible-galaxy (see [bootstrap.sh](bootstrap.sh)) which then also runs your playbook, in this case [test_play.yml](playbook/test_play.yml).
+Once you've downloaded the roles with a call to ansible-galaxy (see [bootstrap.sh](bootstrap.sh)) the next step runs your playbook, in this case [test_play.yml](playbook/test_play.yml).
 
 > *Notice how I've renamed the role when installing it and referred to it in my playbook by the new name. This is just to highlight that it's possible.*
 
