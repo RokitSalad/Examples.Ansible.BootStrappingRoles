@@ -15,8 +15,9 @@ Vagrant.configure("2") do |config|
 
   config.ssh.insert_key = false
   config.vm.box = "josemzr1/cloud-toolbox"
+  config.vm.box_version = "1.2.1"
   config.vm.synced_folder "Ansible", "/apps/ansible"
-  config.vm.provision "shell", path: "configure.sh"
+  config.vm.provision "shell", path: "bootstrap.sh"
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
