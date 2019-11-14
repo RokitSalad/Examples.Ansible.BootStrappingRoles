@@ -1,0 +1,6 @@
+---
+ - name: Install nginx
+   become: true
+   hosts: localhost
+   roles:
+    - { role: local.nginx }
