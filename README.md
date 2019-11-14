@@ -34,4 +34,4 @@ Once you've downloaded the roles with a call to ansible-galaxy (see [bootstrap.s
 
 > *Notice how I've renamed the role when installing it and referred to it in my playbook by the new name. This is just to highlight that it's possible.*
 
-It's the playbook and [bootstrap.sh](bootstrap.sh) which is going to be your primary output from this exercise, as these give you a package for bootstrapping your application in any instance using Ansible.
+So, let's pretend you're a developer working on a web application. You could add an additional step into [test_play.yml](playbook/test_play.yml) to install your app and reference it in nginx. Then you can pass the entire playbook to another dev and be confident that they will get exactly the same experience as you do, because it references the same base box. Deploying through to production can again use the same playbook.
