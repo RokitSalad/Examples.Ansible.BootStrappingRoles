@@ -26,7 +26,7 @@ nginxinc.nginx
 ```
 and gives this role the name 'local.nginx'. When you run this play, you'll see the role appear in the Ansible\roles folder, because the [Vagrantfile](Vagrantfile) has shared that folder with the virtual machine.
 
-The [requirements.yml](playbook/requirements.yml) only pulls down the roles, it doesn't execute them. Although if any roles are dependent on other roles, it will pull them down as well.
+The ansible-galaxy command only pulls down the roles, it doesn't execute them. Although if any roles are dependent on other roles, it will pull them down as well.
 
 > *It's possible to reference roles from your own git repositories, whether they're public or private. Simply follow the syntax [here](https://galaxy.ansible.com/docs/using/installing.html#installing-multiple-roles-from-a-file).*
 
